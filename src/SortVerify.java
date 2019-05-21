@@ -6,11 +6,11 @@ import com.zhh.sort.Sort.SortType;
 public class SortVerify {
 
     public static void main(String[] args) {
-        int[] a = Shuffler.shuffle(49);
+        int[] a = Shuffler.shuffle(50);
         print(a);
 
-
-        Sort sort = SortFactory.create(SortType.THREEWayQS);
+        a = new int[]{10,2,3,4,4,4,10,5,6,7,8};
+        Sort sort = SortFactory.create(SortType.QUICK);
         sort.sort(a);
 
         print(a);
